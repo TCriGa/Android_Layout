@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Minha_Musica_Favorita</string>
+    <string name="titulo">Minha música Favorita</string>
+    <string name="descrissao_imagem_mundoBita">imagem do mundo bita com animas da fazendinha, vaca,porco, burro etc..</string>
+    <string name="nome_musica">Fazendinha</string>
+    <string name="musica_fazendinha">\"Bom dia\n O Sol já nasceu lá na fazendinha\n Acorda o bezerro e a vaquinha\n Que já cocoricou dona galinha\n Levanta\n Que o cavalinho já pulou da cama\n Que o pintinho tirou seu pijama\n E o porquinho já caiu na lama\n Lá na fazendinha é manhã\n Deixa de manha e vem pra cá\n Que o Sol raiou e agora é hora de brincar\"</string>
+</resources>

@@ -43,5 +43,13 @@
             android:backgroundTint="@color/teal_700"
             android:text="@string/titulo_botao_detalhe" />
 
+        <Button
+            android:id="@+id/button_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginTop_24"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/Button_Email" />
+
     </LinearLayout>
 </ScrollView>

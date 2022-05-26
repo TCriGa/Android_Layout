@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_250"
+        android:layout_gravity="center"
+        android:contentDescription="@string/descrissao_imagem_mundoBita"
+        android:scaleType="centerInside"
+        android:src="@drawable/mundo_bita" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/nome_musica"
+        android:textSize="@dimen/textSize_18"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/musica_fazendinha"
+        android:textSize="@dimen/textSize_16" />
+</LinearLayout>

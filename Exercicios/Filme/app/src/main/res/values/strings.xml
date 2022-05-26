@@ -4,4 +4,5 @@
     <string name="nome_filme">Viuva Negra</string>
     <string name="titulo_botao_mensagem">MENSAGEM</string>
     <string name="titulo_botao_detalhe">DETALHE FILME</string>
+    <string name="Button_Email">email</string>
 </resources>
