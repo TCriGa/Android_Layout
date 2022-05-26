@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Meu Pet</string>
+    <string name="titulo_meuPet">ESSA É A FOTO DO MEU PET</string>
+    <string name="descricao_imagem_dog_zequinha">Imagem do cachorro zequinha deitado brincando com as pernas para cima e sorrindo</string>
+    <string name="nome_pet">Nome do Pet: Zequinha</string>
+    <string name="raca_pet">Raça do Pet: Dachshund</string>
+    <string name="idade_pet">Idade Pet: 2 anos</string>
+    <string name="titulo_botao_mensagem">Mensagem</string>
+
+</resources>

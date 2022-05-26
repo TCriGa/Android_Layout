@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Filme</string>
+    <string name="descricao_imagem_viuva_negra">Imagem com vários personagens do filme viuva negra, poster da chamada do filme</string>
+    <string name="nome_filme">Viuva Negra</string>
+    <string name="titulo_botao_mensagem">MENSAGEM</string>
+    <string name="titulo_botao_detalhe">DETALHE FILME</string>
+</resources>

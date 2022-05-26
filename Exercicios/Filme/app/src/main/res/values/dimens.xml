@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_250">250dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="marginTop_24">24dp</dimen>
+</resources>

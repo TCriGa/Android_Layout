@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_24"
+        android:text="@string/titulo_meuPet"
+        android:textAllCaps="true"
+        android:textSize="@dimen/textSize_16" />
+
+    <ImageView
+        android:layout_width="@dimen/width_200"
+        android:layout_height="@dimen/height_200"
+        android:layout_marginTop="@dimen/marginTop_36"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/descricao_imagem_dog_zequinha"
+        android:src="@drawable/zequinha"/>
+
+    <TextView
+        android:layout_width="142dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginTop_36"
+        android:text="@string/nome_pet"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/raca_pet"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/idade_pet"
+        android:textSize="@dimen/textSize_12" />
+
+    <Button
+        android:id="@+id/button_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_24"
+        android:background="@color/cor_button"
+        android:text="@string/titulo_botao_mensagem"
+        android:textAllCaps="true"
+        android:textSize="@dimen/textSize_14" />
+
+
+</LinearLayout>
