@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CaixaDeSupermercado</string>
+    <string name="descricao_app">Esse aplicativo vai te ajudar a calcular o preço dos seus produtos!\nPara isso digite o nome do produto, a quantidade, valor e por fim clique no botão de calcular para verificar o valor da sua compra!</string>
+    <string name="nome_produto">Nome do Produto:</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="valor_unitario">Valor (unitário) do Produto:</string>
+    <string name="button_calcular">Calcular</string>
+    <string name="caixa_supermercado">Caixa Supermercado</string>
+    <string name="valor_total">O Valor Total é de:</string>
+    <string name="button_refazer_compra">REFAZER COMPRA</string>
+    <string name="detalhe_compra">Detalhe da compra</string>
+</resources>
