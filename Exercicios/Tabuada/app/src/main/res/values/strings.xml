@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tabuada</string>
+    <string name="informacao_texto">Vamos calcular a tabuada, digite um valor e daremos a você a tabuada do número escolhido!</string>
+    <string name="valor_tabuada">Digite o valor da tabuada:</string>
+    <string name="calcular_tabuada">Calcular Tabuada</string>
+    <string name="descricao_imagem_tabuada">Banner de tabuada do 1 ao 9 com desenho de várias crianças</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tabuada_do">Tabuada do</string>
+    <string name="resultado_tabuada">A Tabuada do</string>
+</resources>
