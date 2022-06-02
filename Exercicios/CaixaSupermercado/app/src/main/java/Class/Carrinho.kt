@@ -5,8 +5,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class Carrinho(
-    private var quantidade: Int,
-    private var valorDoProduto: Double
+    private val quantidade: Int,
+    private val valorDoProduto: Double
 ) : Parcelable {
     fun getQuantidade()= this.quantidade
     fun valorDoProduto()= this.valorDoProduto

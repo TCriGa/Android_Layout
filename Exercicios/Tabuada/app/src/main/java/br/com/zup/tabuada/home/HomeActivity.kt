@@ -6,6 +6,7 @@ import br.com.zup.tabuada.Tabuada
 import br.com.zup.tabuada.`interface`.ClickFragments
 import br.com.zup.tabuada.databinding.ActivityHomeBinding
 import br.com.zup.tabuada.fragments.ButtonFragment
+import br.com.zup.tabuada.fragments.InformacaoFragment
 
 class HomeActivity : AppCompatActivity(), ClickFragments {
     private lateinit var binding: ActivityHomeBinding
@@ -22,9 +23,9 @@ class HomeActivity : AppCompatActivity(), ClickFragments {
 
     }
 
-    override fun clickFragments(n: String) {
-        val tabuada = Tabuada(0,0)
-        val informacaoFragment = ButtonFragment().apply {
+    override fun clickFragments(n: Int) {
+        val tabuada = Tabuada(n)
+        val informacaoFragment = InformacaoFragment().apply {
             arguments = Bundle().apply {
                 putParcelable(TABUADA, tabuada)
             }

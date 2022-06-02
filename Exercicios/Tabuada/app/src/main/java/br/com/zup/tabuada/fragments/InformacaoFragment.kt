@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModel
 import br.com.zup.tabuada.TABUADA
 import br.com.zup.tabuada.Tabuada
 import br.com.zup.tabuada.databinding.FragmentInformacaoBinding
@@ -27,7 +28,8 @@ class InformacaoFragment : Fragment() {
         val tabuada = arguments?.getParcelable<Tabuada>(TABUADA)
 
         if (tabuada != null){
-            binding.resultado.text = tabuada.getN().toString()
+            binding.resultado.text = tabuada.getResult().toString()
+
 
         }
 

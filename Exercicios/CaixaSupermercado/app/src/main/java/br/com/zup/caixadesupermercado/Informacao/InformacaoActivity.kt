@@ -62,4 +62,6 @@ class InformacaoActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
 }
