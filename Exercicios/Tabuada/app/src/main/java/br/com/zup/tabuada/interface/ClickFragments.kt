@@ -2,6 +2,6 @@ package br.com.zup.tabuada.`interface`
 
 
 interface ClickFragments {
-    fun clickFragments(n: Int)
+    fun clickFragments(numero: Int)
 
 }

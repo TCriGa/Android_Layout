@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout-v28/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/activity_home.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/activity_splash.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/fragment_botao.xml" value="0.1" />
-        <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/fragment_button.xml" value="0.16145833333333334" />
+        <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/fragment_button.xml" value="0.22" />
         <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/fragment_informacao.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/thayana.moraes/Documents/Android_Layout/Exercicios/Tabuada/app/src/main/res/layout/fragment_resultado.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

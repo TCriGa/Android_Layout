@@ -8,4 +8,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tabuada_do">Tabuada do</string>
     <string name="resultado_tabuada">A Tabuada do</string>
+    <string name="recalcular_tabuada">Recalcular Tabuada</string>
 </resources>

@@ -2,10 +2,10 @@ package br.com.zup.tabuada.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.zup.tabuada.home.HomeActivity
+import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.tabuada.R
+import br.com.zup.tabuada.home.HomeActivity
 import java.util.*
 
 

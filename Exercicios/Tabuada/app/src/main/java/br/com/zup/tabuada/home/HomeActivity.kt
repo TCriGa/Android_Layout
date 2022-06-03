@@ -1,12 +1,12 @@
 package br.com.zup.tabuada.home
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.tabuada.TABUADA
-import br.com.zup.tabuada.Tabuada
 import br.com.zup.tabuada.`interface`.ClickFragments
 import br.com.zup.tabuada.databinding.ActivityHomeBinding
-import br.com.zup.tabuada.fragments.ButtonFragment
-import br.com.zup.tabuada.fragments.InformacaoFragment
+import br.com.zup.tabuada.fragments.ResultadoFragment
+import br.com.zup.tabuada.fragments.TabuadaFragment
 
 class HomeActivity : AppCompatActivity(), ClickFragments {
     private lateinit var binding: ActivityHomeBinding
@@ -18,24 +18,24 @@ class HomeActivity : AppCompatActivity(), ClickFragments {
 
         supportFragmentManager
             .beginTransaction()
-            .add(binding.container.id, ButtonFragment())
+            .add(binding.container.id, TabuadaFragment())
             .commit()
 
     }
 
-    override fun clickFragments(n: Int) {
-        val tabuada = Tabuada(n)
-        val informacaoFragment = InformacaoFragment().apply {
+    override fun clickFragments(numero: Int) {
+        val fragmentsTabuada = ResultadoFragment().apply {
             arguments = Bundle().apply {
-                putParcelable(TABUADA, tabuada)
+                putInt(TABUADA, numero)
             }
         }
-
         supportFragmentManager
             .beginTransaction()
-            .add(binding.container.id, informacaoFragment)
+            .replace(binding.container.id, fragmentsTabuada)
+            .addToBackStack("Detail")
             .commit()
 
     }
+
 
 }
