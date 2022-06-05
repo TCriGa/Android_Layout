@@ -15,15 +15,7 @@ class TabuadaFragment : Fragment() {
     private lateinit var binding: FragmentTabuadaBinding
     private lateinit var interfaceClick: ClickFragments
 
-    override fun onAttach(context: Context) {
 
-        super.onAttach(context)
-        try {
-            interfaceClick = context as HomeActivity //Cast, conversão
-        } catch (ex: Exception) {
-            Log.i("Erros", "Erro na inicialização da interfaceClick ${ex.message}")
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,7 +41,15 @@ class TabuadaFragment : Fragment() {
 
     }
 
+    override fun onAttach(context: Context) {
 
+        super.onAttach(context)
+        try {
+            interfaceClick = context as HomeActivity //Cast, conversão
+        } catch (ex: Exception) {
+            Log.i("Erros", "Erro na inicialização da interfaceClick ${ex.message}")
+        }
+    }
     private fun limparCampos() {
         binding.editText.text.clear()
     }

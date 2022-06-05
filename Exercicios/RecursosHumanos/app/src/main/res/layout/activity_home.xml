@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:id="@+id/nav_host_fragment_container"
+        android:name="br.com.zup.recursoshumanos.cadastro.CadastroFragment"
+        android:layout_width="389dp"
+        android:layout_height="671dp"
+        android:layout_margin="@dimen/margin_36"
+        android:background="@color/material_dynamic_neutral80"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/navigation" />
+
+    <TextView
+        android:id="@+id/text_descrisao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:gravity="center"
+        android:lineHeight="@dimen/line_20"
+        android:text="@string/texto_descricao"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

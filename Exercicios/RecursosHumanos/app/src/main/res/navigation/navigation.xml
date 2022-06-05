@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/cadastroFragment">
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.com.zup.recursoshumanos.cadastro.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="br.com.zup.recursoshumanos.resultado.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" />
+</navigation>

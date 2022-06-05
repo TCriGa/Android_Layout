@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/hiFragment">
+
+    <fragment
+        android:id="@+id/hiFragment"
+        android:name="br.com.zup.aula41.HiFragment"
+        android:label="fragment_hi"
+        tools:layout="@layout/fragment_hi" >
+        <action
+            android:id="@+id/action_hiFragment_to_fineFragment"
+            app:destination="@id/fineFragment" />
+        <argument android:name="argsString"
+            app:argType="string"
+            android:defaultValue="Hello Word" />
+        <action
+            android:id="@+id/action_hiFragment_to_helloFragment"
+            app:destination="@id/helloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fineFragment"
+        android:name="br.com.zup.aula41.FineFragment"
+        android:label="fragment_fine"
+        tools:layout="@layout/fragment_fine" >
+        <argument
+            android:name="argsInt"
+            app:argType="integer"
+            android:defaultValue="100" />
+        <argument
+            android:name="argsBoolean"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_fineFragment_to_helloFragment"
+            app:destination="@id/helloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFragment"
+        android:name="br.com.zup.aula41.HelloFragment"
+        android:label="fragment_hello"
+        tools:layout="@layout/fragment_hello" >
+        <argument
+            android:name="argsFloat"
+            app:argType="float"
+            android:defaultValue="100" />
+        <action
+            android:id="@+id/action_helloFragment_to_fineFragment"
+            app:destination="@id/fineFragment" />
+    </fragment>
+</navigation>

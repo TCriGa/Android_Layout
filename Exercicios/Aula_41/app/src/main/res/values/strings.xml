@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aula41</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi">HI</string>
+    <string name="hello">Hello</string>
+    <string name="fine">As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.</string>
+    <string name="hello_fine">Seja a mudança que você quer ver no mundo!!</string>
+    <string name="welcome">Welcome!!!!</string>
+    <string name="guys">Guys ,-,</string>
+    <string name="whats_your_name">What´s your name?</string>
+    <string name="how_are_you">How are you?</string>
+    <string name="frase_01">Frase 01</string>
+    <string name="frase_02">Frase 02</string>
+</resources>
