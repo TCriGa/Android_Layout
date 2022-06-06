@@ -17,5 +17,16 @@
         android:id="@+id/resultadoFragment"
         android:name="br.com.zup.recursoshumanos.resultado.ResultadoFragment"
         android:label="fragment_resultado"
-        tools:layout="@layout/fragment_resultado" />
+        tools:layout="@layout/fragment_resultado" >
+        <argument android:name="nomeArgs"
+            app:argType="string" />
+        <argument
+            android:name="horasT"
+            app:argType="float" />
+        <argument android:name="salarioT"
+            app:argType="float" />
+        <argument
+            android:name="valorH"
+            app:argType="float" />
+    </fragment>
 </navigation>
