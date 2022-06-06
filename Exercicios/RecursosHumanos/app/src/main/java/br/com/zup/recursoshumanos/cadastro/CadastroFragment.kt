@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import br.com.zup.recursoshumanos.HORAS_TRABALHADAS
 import br.com.zup.recursoshumanos.NOME
 import br.com.zup.recursoshumanos.VALOR_HORA
@@ -25,7 +26,6 @@ class CadastroFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentCadastroBinding.inflate(inflater, container, false)
-
         return binding.root
 
     }
@@ -34,23 +34,24 @@ class CadastroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonCalcular.setOnClickListener {
-
             exibirInformacoes()
+            verificarCamposEdicao()
             limparCampos()
-
-            view.findNavController().navigate(
-                CadastroFragmentDirections.actionCadastroFragmentToResultadoFragment(
-                    nome,
-                    valorH,
-                    horasT,
-                    salarioTotal
-                )
-
-            )
-
-
         }
 
+    }
+
+    private fun navegar(){
+
+        findNavController().navigate(
+            CadastroFragmentDirections.actionCadastroFragmentToResultadoFragment(
+                nome,
+                valorH,
+                horasT,
+                salarioTotal
+            )
+
+        )
     }
 
     private fun calcularSalario(): Float {
@@ -60,11 +61,19 @@ class CadastroFragment : Fragment() {
 
     private fun exibirInformacoes() {
 
-        nome = binding.editNome.text.toString()
-        valorH = binding.editValorH.text.toString().toFloat()
-        horasT = binding.editHorasT.text.toString().toFloat()
-        salarioTotal = calcularSalario()
+        if (binding.editNome.text.isEmpty()
+            || binding.editValorH.text.isEmpty()
+            || binding.editHorasT.text.isEmpty()
+        ) {
+            verificarCamposEdicao()
+        } else {
+            nome = binding.editNome.text.toString()
+            valorH = binding.editValorH.text.toString().toFloat()
+            horasT = binding.editHorasT.text.toString().toFloat()
+            salarioTotal = calcularSalario()
 
+            navegar()
+        }
     }
 
     private fun limparCampos() {
