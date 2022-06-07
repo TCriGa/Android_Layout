@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="herois_marvel">Alguns Herois da Marvel!</string>
+    <string name="baby_groot">Baby Groot</string>
+    <string name="texto_detalhe">Groot é um senciente, indivíduo-árvore e frequente cúmplice do criminoso intergaláctico Rocket Raccoon. Juntoes, eles viajaram pela galáxia coletando recompensas até conhecerem o Senhor das Estrelas, que os convenceu à ajudá-lo a vender o Orb por e depois dividir a recompensa gigantesca. Entretanto, ao descobrirem que o Orb era na verdade uma pedra do infinito que Ronan buscava para si, Groot se deu conta, apesar de sua natureza gananciosa, de que valia a pena arriscar tudo para acabar com os planos de Ronan de destruir Xandar e escravizar o mundo. Durante a batalha de Xandar , Groot se sacrificou para salvar seus amigos. Entretanto, parte de seu corpo destruído foi plantado em um vaso por Rocket, e o mesmo cresceu trazendo-o de volta à vida, agora como Baby Groot</string>
+    <string name="nome_do_heroi">Nome do Heroi</string>
+    <string name="detalhe">Detalhes</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detalhe.DetalheActivity">
+
+    <ImageView
+        android:id="@+id/iv_personagem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_125"
+        android:layout_margin="@dimen/margin_16"
+        android:src="@drawable/baby_groot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/text_nome_personagem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/nome_do_heroi"
+        android:textSize="@dimen/size_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_personagem"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <TextView
+        android:id="@+id/text_detalhe_personagem"
+        android:layout_width="0dp"
+        android:lineHeight="@dimen/linearHeight_20"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="italic"
+        android:text="@string/texto_detalhe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nome_personagem"
+        app:layout_constraintVertical_bias="0.206" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
