@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fotosFragment">
+
+    <fragment
+        android:id="@+id/fotosFragment"
+        android:name="br.com.zup.minha__musica_favorita.informacao.fragments.fotos.FotosFragment"
+        android:label="fragment_fotos"
+        tools:layout="@layout/fragment_fotos" >
+        <action
+            android:id="@+id/action_fotosFragment_to_informacaoActivity"
+            app:destination="@id/informacaoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/informacaoActivity"
+        android:name="br.com.zup.minha__musica_favorita.informacao.InformacaoActivity"
+        android:label="activity_informacao"
+        tools:layout="@layout/activity_informacao" />
+</navigation>
