@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.FragmentFotosBinding
@@ -65,8 +66,8 @@ class FotosFragment : Fragment() {
     }
 
     private fun irParaDetalheClickFragment(album : Musica){
-
-       NavHostFragment.findNavController(this).navigate(R.id.action_fotosFragment_to_detalheClickFragment)
+val navControler = findNavController()
+      navControler.navigate(R.id.action_fotosFragment_to_detalheClickFragment)
     }
 
 

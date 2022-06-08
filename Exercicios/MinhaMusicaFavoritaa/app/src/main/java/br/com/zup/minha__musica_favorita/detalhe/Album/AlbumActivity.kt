@@ -17,6 +17,6 @@ class AlbumActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        supportFragmentManager.findFragmentById(binding.fragmentContainerView2.id) as NavHostFragment
+
     }
 }

@@ -19,10 +19,10 @@
         <activity
             android:name=".detalhe.informacoes.InformacaoActivity"
             android:exported="true" />
-        <activity
-            android:name=".detalhe.DetallheActivity"
-            android:exported="false"
-            tools:ignore="MissingClass" />
+<!--        <activity-->
+<!--            android:name=".detalhe.DetallheActivity"-->
+<!--            android:exported="false"-->
+<!--            tools:ignore="MissingClass" />-->
         <activity
             android:name=".home.HomeActivity"
             android:exported="true">

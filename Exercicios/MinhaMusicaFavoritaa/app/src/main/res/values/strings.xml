@@ -14,4 +14,7 @@
     <string name="musica_favorita">Minha música favorita</string>
     <string name="descri_mundoBitaEoCirco">Imagem do mundo bita e o circo</string>
     <string name="nome_do_album">Nome do Album</string>
+    <string name="nome_album">Nome do album</string>
+    <string name="descricao_do_album">Descrição do album</string>
+    <string name="detalhe_do_album">Detalhe do album</string>
 </resources>

@@ -1,6 +1,18 @@
 package br.com.zup.minha__musica_favorita
 
 const val BITA_E_O_CIRCO = "Bita e o Circo"
-const val ANO_BITA_E_O_CIRCO = 2020
+const val ANO_BITA_E_O_CIRCO = "Ano = 2020"
+const val PRODUCAO = "Produção : Mr. Plot"
 const val BITA_E_O_NOSSO_MUNDO = " Bita e o Nosso Mundo"
-const val ANO_NOSSO_MUNDO = 2019
+const val ANO_NOSSO_MUNDO = "Ano 2019"
+const val  BITA_E_A_NATUREZA = "Bita e a Natureza"
+const val ANO_NATUREZA = "Ano 2017"
+const val PRODUCAO_NATUREZA = "Sonic Music"
+const val BITA_E_O_CORPO_HUMANO = " Bita e o Corpo Humano"
+const val ANO_CORPO_HUMANO = "Ano 2016"
+const val PRODUCAO_HUMANO = "Sony Music"
+const val BITA_E_O_NOSSO_DIA = "Bita e o Nosso Dia"
+const val ANO_NOSSO_DIA = "2015"
+const val PRODUCAO_NOSSO_DIA = " Sony music"
+const val BITA_E_AS_BRINCADEIRAS = "Bita e as brincadeiras"
+const val ANO_BRINCADEIRAS = " Ano "
