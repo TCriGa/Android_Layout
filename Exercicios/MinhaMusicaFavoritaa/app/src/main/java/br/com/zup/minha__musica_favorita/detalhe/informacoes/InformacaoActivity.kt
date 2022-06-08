@@ -1,11 +1,12 @@
-package br.com.zup.minha__musica_favorita.informacao
+package br.com.zup.minha__musica_favorita.detalhe.informacoes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityInformacaoBinding
-import br.com.zup.minha__musica_favorita.informacao.fragments.adapter.InformacoesPagerAdapter
+import br.com.zup.minha__musica_favorita.detalhe.informacoes.adapter.InformacoesPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class InformacaoActivity : AppCompatActivity() {
@@ -20,6 +21,8 @@ class InformacaoActivity : AppCompatActivity() {
 
         exibirAppBarCustomizada()
         exibirViewPagerTabLayout()
+
+
     }
 
     private fun exibirAppBarCustomizada() {

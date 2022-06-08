@@ -1,14 +1,15 @@
-package br.com.zup.minha__musica_favorita.informacao.fragments.fotos.adapter
+package br.com.zup.minha__musica_favorita.detalhe.Album.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.minha__musica_favorita.databinding.ListaMusicaItemBinding
 import br.com.zup.minha__musica_favorita.model.Musica
+import kotlin.reflect.KFunction0
 
 class AlbumMusicaAdapter(
-    private var listaAlbum: MutableList<Musica>
+    private var listaAlbum: MutableList<Musica>,
+    private var cliclAlbum: (album : Musica) -> Unit
 ) : RecyclerView.Adapter<AlbumMusicaAdapter.ViewHolder>()
 {
 
@@ -19,7 +20,10 @@ class AlbumMusicaAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        val albumMusica = listaAlbum[position]
-        holder.adicionarInformacoesView(albumMusica)
+        holder.adicionarInformacoesView(albumMusica as Musica)
+        holder.binding.cvItemLista.setOnClickListener {
+            cliclAlbum(albumMusica)
+        }
 
     }
 
@@ -37,7 +41,6 @@ class AlbumMusicaAdapter(
     class ViewHolder(val binding: ListaMusicaItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun adicionarInformacoesView(musica:Musica){
             binding.ivHeroi.setImageResource(musica.getImagem())
-            binding.tvAlbunsMusica.text = musica.getNome()
 
         }
     }

@@ -1,14 +1,15 @@
-package br.com.zup.minha__musica_favorita.informacao.fragments.fotos
+package br.com.zup.minha__musica_favorita.detalhe.Album
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import br.com.zup.minha__musica_favorita.*
+import androidx.navigation.fragment.NavHostFragment
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.FragmentFotosBinding
-import br.com.zup.minha__musica_favorita.informacao.fragments.fotos.adapter.AlbumMusicaAdapter
+import br.com.zup.minha__musica_favorita.detalhe.Album.adapter.AlbumMusicaAdapter
 import br.com.zup.minha__musica_favorita.model.Musica
 
 class FotosFragment : Fragment() {
@@ -16,7 +17,7 @@ class FotosFragment : Fragment() {
     private lateinit var binding: FragmentFotosBinding
 
     private val albumAdapter: AlbumMusicaAdapter by lazy {
-        AlbumMusicaAdapter(arrayListOf())
+        AlbumMusicaAdapter(arrayListOf(), this ::  irParaDetalheClickFragment)
     }
 
     override fun onCreateView(
@@ -38,7 +39,8 @@ class FotosFragment : Fragment() {
     private fun exibirRecyclerView() {
         adicionarItemListaAlbum()
         binding.rvListaMusica.adapter = albumAdapter
-        binding.rvListaMusica.layoutManager = LinearLayoutManager(context)
+        binding.rvListaMusica.layoutManager = StaggeredGridLayoutManager(2,
+            StaggeredGridLayoutManager.VERTICAL)
 
     }
 
@@ -49,19 +51,24 @@ class FotosFragment : Fragment() {
         listaAlbum.add(
             Musica(
                 R.drawable.bita_e_o_circo,
-                BITA_E_O_CIRCO, ANO_BITA_E_O_CIRCO
+
             ),
         )
 
         listaAlbum.add(
             Musica(
                 R.drawable.bita_e_o_nosso_mundo,
-                BITA_E_O_NOSSO_MUNDO,
-                ANO_NOSSO_MUNDO
             )
         )
+        albumAdapter.atualizarListaAlbum(listaAlbum)
 
     }
+
+    private fun irParaDetalheClickFragment(album : Musica){
+
+       NavHostFragment.findNavController(this).navigate(R.id.action_fotosFragment_to_detalheClickFragment)
+    }
+
 
 
 }

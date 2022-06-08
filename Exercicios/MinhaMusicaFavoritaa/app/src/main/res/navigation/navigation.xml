@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/fotosFragment">
-
+    <fragment
+        android:id="@+id/detalheClickFragment"
+        android:name="br.com.zup.minha__musica_favorita.detalhe.Album.DetalheClickFragment"
+        android:label="fragment_detalhe_click"
+        tools:layout="@layout/fragment_detalhe_click" />
     <fragment
         android:id="@+id/fotosFragment"
-        android:name="br.com.zup.minha__musica_favorita.informacao.fragments.fotos.FotosFragment"
+        android:name="br.com.zup.minha__musica_favorita.detalhe.Album.FotosFragment"
         android:label="fragment_fotos"
         tools:layout="@layout/fragment_fotos" >
         <action
-            android:id="@+id/action_fotosFragment_to_informacaoActivity"
-            app:destination="@id/informacaoActivity" />
+            android:id="@+id/action_fotosFragment_to_detalheClickFragment"
+            app:destination="@id/detalheClickFragment" />
     </fragment>
-    <activity
-        android:id="@+id/informacaoActivity"
-        android:name="br.com.zup.minha__musica_favorita.informacao.InformacaoActivity"
-        android:label="activity_informacao"
-        tools:layout="@layout/activity_informacao" />
 </navigation>

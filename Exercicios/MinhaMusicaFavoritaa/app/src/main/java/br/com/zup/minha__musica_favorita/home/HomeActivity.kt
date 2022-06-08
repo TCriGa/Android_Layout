@@ -3,10 +3,9 @@ package br.com.zup.minha__musica_favorita.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityHomeBinding
-import br.com.zup.minha__musica_favorita.informacao.InformacaoActivity
+import br.com.zup.minha__musica_favorita.detalhe.informacoes.InformacaoActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -22,6 +21,8 @@ class HomeActivity : AppCompatActivity() {
         binding.buttonDetalhe.setOnClickListener {
             startActivity(Intent(this, InformacaoActivity::class.java))
         }
+
+
 
     }
 }

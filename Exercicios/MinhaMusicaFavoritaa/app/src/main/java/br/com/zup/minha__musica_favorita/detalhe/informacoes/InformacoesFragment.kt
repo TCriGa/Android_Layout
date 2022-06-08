@@ -1,4 +1,4 @@
-package br.com.zup.minha__musica_favorita.informacao.fragments
+package br.com.zup.minha__musica_favorita.detalhe.informacoes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.zup.minha__musica_favorita.R
 
-class ListaFragment : Fragment() {
+class informacoesFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +15,8 @@ class ListaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista, container, false)
+        return inflater.inflate(R.layout.fragment_informacoes, container, false)
     }
+
 
 }

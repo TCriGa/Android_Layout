@@ -13,31 +13,15 @@
 
         <ImageView
             android:id="@+id/ivHeroi"
-            android:layout_width="@dimen/width_50"
-            android:layout_height="@dimen/height_50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_250"
             android:layout_margin="@dimen/margin_8"
             android:contentDescription="@string/descri_mundoBitaEoCirco"
-            android:scaleType="centerCrop"
+            android:scaleType="center"
             android:src="@drawable/bita_e_o_circo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tv_AlbunsMusica"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_16"
-            android:layout_marginStart="8dp"
-            android:gravity="center"
-            android:text="@string/nome_do_album"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/ivHeroi"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.34" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
