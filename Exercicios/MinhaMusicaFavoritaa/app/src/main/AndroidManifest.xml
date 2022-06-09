@@ -14,15 +14,15 @@
         android:theme="@style/Theme.Minha__Musica_Favorita"
         tools:targetApi="31">
         <activity
-            android:name=".detalhe.Album.AlbumActivity"
+            android:name=".detalhe.album.DetalheAlbumActivity"
             android:exported="true" />
         <activity
             android:name=".detalhe.informacoes.InformacaoActivity"
             android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".detalhe.DetallheActivity"-->
-<!--            android:exported="false"-->
-<!--            tools:ignore="MissingClass" />-->
+        <activity
+            android:name=".detalhe.DetallheActivity"
+            android:exported="false"
+            tools:ignore="MissingClass" />
         <activity
             android:name=".home.HomeActivity"
             android:exported="true">

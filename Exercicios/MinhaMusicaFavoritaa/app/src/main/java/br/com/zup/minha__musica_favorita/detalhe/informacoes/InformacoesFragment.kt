@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.zup.minha__musica_favorita.R
 
-class informacoesFragment : Fragment() {
+class InformacoesFragment : Fragment() {
 
 
     override fun onCreateView(

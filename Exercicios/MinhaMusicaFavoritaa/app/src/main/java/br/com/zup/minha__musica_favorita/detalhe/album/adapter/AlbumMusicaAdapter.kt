@@ -1,11 +1,10 @@
-package br.com.zup.minha__musica_favorita.detalhe.Album.adapter
+package br.com.zup.minha__musica_favorita.detalhe.album.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.minha__musica_favorita.databinding.ListaMusicaItemBinding
 import br.com.zup.minha__musica_favorita.model.Musica
-import kotlin.reflect.KFunction0
 
 class AlbumMusicaAdapter(
     private var listaAlbum: MutableList<Musica>,

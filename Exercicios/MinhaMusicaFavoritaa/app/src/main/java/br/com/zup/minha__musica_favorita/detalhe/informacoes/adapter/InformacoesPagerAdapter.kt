@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import br.com.zup.minha__musica_favorita.detalhe.Album.FotosFragment
-import br.com.zup.minha__musica_favorita.detalhe.informacoes.informacoesFragment
+import br.com.zup.minha__musica_favorita.detalhe.album.FotosFragment
+import br.com.zup.minha__musica_favorita.detalhe.informacoes.InformacoesFragment
 
 class InformacoesPagerAdapter(
     fragmentManager: FragmentManager,
@@ -17,10 +17,10 @@ class InformacoesPagerAdapter(
 
     override fun createFragment(position: Int): Fragment {
         when(position){
-            0 -> return informacoesFragment()
+            0 -> return InformacoesFragment()
             1 -> return FotosFragment()
         }
 
-        return informacoesFragment()
+        return InformacoesFragment()
     }
 }

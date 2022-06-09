@@ -1,9 +1,8 @@
 package br.com.zup.minha__musica_favorita.detalhe.informacoes
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.navigation.fragment.NavHostFragment
+import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityInformacaoBinding
 import br.com.zup.minha__musica_favorita.detalhe.informacoes.adapter.InformacoesPagerAdapter

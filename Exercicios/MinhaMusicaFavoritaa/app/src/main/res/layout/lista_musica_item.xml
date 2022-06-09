@@ -17,7 +17,6 @@
             android:layout_height="@dimen/height_250"
             android:layout_margin="@dimen/margin_8"
             android:contentDescription="@string/descri_mundoBitaEoCirco"
-            android:scaleType="center"
             android:src="@drawable/bita_e_o_circo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
