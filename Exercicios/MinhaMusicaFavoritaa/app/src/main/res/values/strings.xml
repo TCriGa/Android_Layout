@@ -17,4 +17,5 @@
     <string name="nome_album">Nome do album</string>
     <string name="descricao_do_album">Descrição do album</string>
     <string name="detalhe_do_album">Detalhe do album</string>
+    <string name="album_favorito">Album favoritado com sucesso!</string>
 </resources>

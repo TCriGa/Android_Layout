@@ -1,10 +1,13 @@
 package br.com.zup.minha__musica_favorita.detalhe.album.adapter
 
+import android.graphics.drawable.Icon
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.zup.minha__musica_favorita.databinding.ListaMusicaItemBinding
 import br.com.zup.minha__musica_favorita.model.Musica
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+import org.w3c.dom.Text
 
 class AlbumMusicaAdapter(
     private var listaAlbum: MutableList<Musica>,
@@ -42,5 +45,10 @@ class AlbumMusicaAdapter(
             binding.ivHeroi.setImageResource(musica.getImagem())
 
         }
+    }
+
+    private fun iconeFavorito(){
+
+
     }
 }

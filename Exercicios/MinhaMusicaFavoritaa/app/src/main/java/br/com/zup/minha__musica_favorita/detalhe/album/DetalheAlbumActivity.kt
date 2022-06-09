@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.minha__musica_favorita.CHAVE_ALBUM
 import br.com.zup.minha__musica_favorita.R
@@ -22,6 +23,10 @@ class DetalheAlbumActivity : AppCompatActivity() {
         exibirAppBarCustomizada()
         setContentView(binding.root)
         recuperarInformacoesAlbum()
+
+        binding.imagemFavorito.setOnClickListener {
+            Toast.makeText(this,getString(R.string.album_favorito),Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun exibirAppBarCustomizada() {
