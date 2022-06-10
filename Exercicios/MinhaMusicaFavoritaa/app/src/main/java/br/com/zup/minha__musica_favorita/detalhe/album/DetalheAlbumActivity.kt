@@ -23,7 +23,7 @@ class DetalheAlbumActivity : AppCompatActivity() {
         recuperarInformacoesAlbum()
 
         binding.imagemFavorito.setOnClickListener {
-            Toast.makeText(this,getString(R.string.album_favorito),Toast.LENGTH_LONG).show()
+            Toast.makeText(this,getString(R.string.album_favorito),Toast.LENGTH_SHORT).show()
         }
     }
 

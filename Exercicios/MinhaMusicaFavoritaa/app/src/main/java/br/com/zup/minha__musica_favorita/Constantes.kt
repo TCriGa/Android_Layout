@@ -28,7 +28,7 @@ const val ANO_BITA_MUNDO2 = "Ano 2021\n Produção : Sony Music"
 const val DESCRICAO_MUNDO2 = "A temporada Bita e o Nosso Mundo 2 foi pensada e planejada para apresentar temas abrangentes que fazem parte da rotina infantil, dando continuidade a Bita e o Nosso Mundo, lançada em 2018.  Ao todo são dez músicas, que estimulam as crianças a lidarem com suas próprias emoções, a entenderem melhor o ambiente, as pessoas e os conceitos que permeiam os primeiros anos de vida "
 const val CHAVE_ALBUM = "CHAVE_BITA"
 const val MUSICAS_01 = "01 - A Tristeza Vai Passar --> Single : Sentimento"
-const val LETRA_MUSICA_01 = "\"LETRA \n" +
+const val LETRA_MUSICA_01 = "\"LETRA DA MÚSICA \n" +
         "\n" +
         "Meu amor, me diga, o que há?\n" +
         "Por que tão cinza seu dia está?\n" +
@@ -67,8 +67,9 @@ const val LETRA_MUSICA_01 = "\"LETRA \n" +
         "Essa tristeza tão fria (vai passar)\n" +
         "E toda sua alegria vai regressar\n\""
 const val MUSICA_02 = " 02 - Fazendinha --> Album: Bita e os animais"
-const val LETRA_MUSICA_02 = "\"Bom dia\n O Sol já nasceu lá na fazendinha\n Acorda o bezerro e a vaquinha\n Que já cocoricou dona galinha\n Levanta\n Que o cavalinho já pulou da cama\n Que o pintinho tirou seu pijama\n E o porquinho já caiu na lama\n Lá na fazendinha é manhã\n Deixa de manha e vem pra cá\n Que o Sol raiou e agora é hora de brincar\""
-const val MUSICA_03 = "Viajar pelo Safari --> Album: Bita e os animais"
+const val LETRA_MUSICA_02 = "LETRA DA MUSICA \n" +
+        "\"Bom dia\n O Sol já nasceu lá na fazendinha\n Acorda o bezerro e a vaquinha\n Que já cocoricou dona galinha\n Levanta\n Que o cavalinho já pulou da cama\n Que o pintinho tirou seu pijama\n E o porquinho já caiu na lama\n Lá na fazendinha é manhã\n Deixa de manha e vem pra cá\n Que o Sol raiou e agora é hora de brincar\""
+const val MUSICA_03 = "03 - Viajar pelo Safari --> Album: Bita e os animais"
 const val LETRA_MUSICA_03 = "\"LETRA DA MÚSICA:\n" +
         "Vamos viajar até onde o Sol possa nos guiar, vamos para a África\n" +
         "Juntos a sorrir dar as nossas mãos e nos divertir, o safari descobrir\n" +
@@ -90,4 +91,219 @@ const val LETRA_MUSICA_03 = "\"LETRA DA MÚSICA:\n" +
         "\n" +
         "Vamos viajar até onde o Sol possa nos guiar, vamos para a África\n" +
         "Juntos a sorrir dar as nossas mãos e nos divertir no safari\""
+const val MUSICA_04 = " 04 - O Amor é Tudo de Bom! Mundo Bita & Emicida --> Single: Sentimentos "
+const val LETRA_MUSICA_04 = "LETRA DA MÚSICA\n" +
+        "\n" +
+        "\"Onde quer que tenha bolo quente no forno\n" +
+        "Um chazinho morno a esperar a gente\n" +
+        "Onde quer que o clima peça braços em torno\n" +
+        "Pra pôr no alguém que quero presente (sempre)\n" +
+        "O Sol reluzente dá pra vida contorno\n" +
+        "Brilha cintilante, como joias e adornos\n" +
+        "Ansiosamente\n" +
+        "A gente aguarda o retorno\n" +
+        "E torno a encontrá-lo contente\n" +
+        "Porque no fundo, no fundo, no fundo, \"nóiz\" sente\n" +
+        "Que o mundo sozinho seria entediante\n" +
+        "O amor é o tempero que o faz interessante\n" +
+        "E só se prova coletivamente\n" +
+        "A\n" +
+        "M\n" +
+        "O\n" +
+        "Erre\n" +
+        "Mas continue em frente\n" +
+        "Por onde for, saiba, só o amor\n" +
+        "Pode ser água, terra, semente\n" +
+        "E tudo de bom\n" +
+        "Tudo de bom\n" +
+        "Por onde for, saiba, só o amor\n" +
+        "Pode ser água, terra, semente\n" +
+        "E tudo de bom\n" +
+        "Tudo de bom\n" +
+        "Tudo de bom\n" +
+        "Tudo de bom\n" +
+        "Onde quer que a lua lhe acompanhe quietinha\n" +
+        "Uma rede sua numa tarde quentinha\n" +
+        "Abrigo são amigos pulando amarelinha\n" +
+        "E a bola caiu lá na vizinha (xiiiiii)\n" +
+        "Onde se quer ficar e que se tem mil motivos\n" +
+        "Onde os beijinhos podem ser curativos\n" +
+        "Lá onde as histórias transbordam dos livros\n" +
+        "Onde a gente se sente mais vivo\n" +
+        "Porque no fundo, no fundo, no fundo, \"nóiz\" sente\n" +
+        "Que o mundo sozinho seria entediante\n" +
+        "O amor é o tempero que o faz interessante\n" +
+        "E só se prova coletivamente\n" +
+        "A\n" +
+        "M\n" +
+        "O\n" +
+        "Erre\n" +
+        "Mas continue em frente\n" +
+        "Por onde for, saiba, só o amor\n" +
+        "Pode ser água, terra, semente\n" +
+        "E tudo de bom\n" +
+        "Tudo de bom\n" +
+        "Por onde for, saiba, só o amor\n" +
+        "Pode ser água, terra, semente\n" +
+        "E tudo de bom\n" +
+        "(Só o amor)\n" +
+        "Tudo de bom\n" +
+        "(Só o amor)\n" +
+        "Tudo de bom\" "
+
+const val MUSICA_05 = " 05 - Todo Mundo Chora --> Album: Bita e o Nosso Mundo"
+const val LETRA_MUSICA_05 = "LETRA DA MÚSICA\n" +
+        "\n" +
+        "\" Choro, choro, choro\n" +
+        "E me apavoro\n" +
+        "Quem é que vem cá me ajudar?\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "E me descontrolo\n" +
+        "Ninguém sabe o que é que há\n" +
+        "\n" +
+        "Quando a preguiça pega\n" +
+        "E o sono me ganha\n" +
+        "Só depois da soneca\n" +
+        "Deixarei de manha\n" +
+        "\n" +
+        "Se a fome aperta\n" +
+        "A pança reclama\n" +
+        "Confusão na certa\n" +
+        "Quem não chora não mama\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "Choro, choro, choro\n" +
+        "Todo mundo pode chorar\n" +
+        "\n" +
+        "Logo, logo, logo\n" +
+        "Logo, logo, logo\n" +
+        "Tudo isso passará\n" +
+        "\n" +
+        "Não me deixe sozinho\n" +
+        "Porque eu sou só um filhotinho\n" +
+        "Preciso tanto do teu carinho\n" +
+        "E quando me desespero\n" +
+        "Não sei dizer com palavras\n" +
+        "Mas é teu colo que quero\n" +
+        "Por isso\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "E me apavoro\n" +
+        "Quem é que vem cá me ajudar?\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "E me descontrolo\n" +
+        "Ninguém sabe o que é que há\n" +
+        "\n" +
+        "Todo povo se intriga\n" +
+        "No berreiro estridente\n" +
+        "Incomoda a barriga\n" +
+        "Ou vem mais um dente\n" +
+        "\n" +
+        "Só tem um remédio\n" +
+        "Se tô chateado\n" +
+        "Pra sair do tédio\n" +
+        "Eu não fico calado\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "Choro, choro, choro\n" +
+        "Todo mundo pode chorar\n" +
+        "\n" +
+        "Logo, logo, logo\n" +
+        "Logo, logo, logo\n" +
+        "Tudo isso passará\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "E me apavoro\n" +
+        "Quem é que vem cá me ajudar?\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "E me descontrolo\n" +
+        "Ninguém sabe o que é que há\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "Choro, choro, choro\n" +
+        "Todo mundo pode chorar\n" +
+        "\n" +
+        "Logo, logo, logo\n" +
+        "Logo, logo, logo\n" +
+        "Tudo isso passará\n" +
+        "\n" +
+        "Choro, choro, choro\n" +
+        "Choro, choro, choro\n" +
+        "Todo mundo pode chorar\n" +
+        "\n" +
+        "Logo, logo, logo\n" +
+        "Logo, logo, logo\n" +
+        "Tudo isso passará\n\""
+const val MUSICA_06 = "06 - Esplêndida Fauna ft. Jr Black --> Album: Bita e a Natureza"
+const val LETRA_MUSICA_06 = "LETRA DA MÚSICA\n" +
+        "\n" +
+        "\"- Hummm, eu queria ser uma foca, bem cabeça fria!\n" +
+        "- E eu, um orangotango!\n" +
+        "- Orangotango?!\n" +
+        "- É, tipo um macacão. \n" +
+        "\n" +
+        "Ah, se eu pudesse ter a boca de um jacaré \n" +
+        "Pra devorar numa dentada só um picolé  \n" +
+        "E se eu tivesse as asas de um belo pássaro \n" +
+        "Eu passaria minhas tardes pelo céu azul \n" +
+        "\n" +
+        "Que divertido seria ter cauda de pavão \n" +
+        "Ser um bichinho preguiça enquanto for verão \n" +
+        "Me camuflar na paisagem como camaleão \n" +
+        "\n" +
+        "Quantas espécies você conhece? \n" +
+        "Reflita com muita calma \n" +
+        "Tudo que é bicho se resplandece \n" +
+        "Na nossa esplêndida fauna \n" +
+        "\n" +
+        "- Eu, na verdade, queria ser um dinossauro!\n" +
+        "- Mas dinossauros não existem mais!\n" +
+        "- Ih, é mesmo!\n" +
+        "\n" +
+        "Agora, quero dar um salto feito canguru \n" +
+        "Fazer buracos pela terra, me tornar tatu \n" +
+        "Vinte mil léguas no mar, nadar onde quiser \n" +
+        "Um tubarão bailando no balanço da maré \n" +
+        "\n" +
+        "Como seria bacana ter juba de leão \n" +
+        "Eu transformado em abelha e você num zangão \n" +
+        "E a gente zumbindo junto numa linda canção \n" +
+        "\n" +
+        "Quantas espécies você conhece? \n" +
+        "Reflita com muita calma \n" +
+        "Tudo que é bicho se resplandece \n" +
+        "Na nossa esplêndida fauna \n" +
+        "\n" +
+        "- Ai, brincar de ser bicho é tão divertido.\n" +
+        "- Mas dá uma canseira, ufa!\""
+const val MUSICA_07 = "07 - Como é grande o meu amor por você --> Album : Radio Bita"
+const val LETRA_MUSICA_07 = "LETRA DA MÚSICA  \n" +
+        "\n" +
+        "\"Eu tenho tanto pra lhe falar\n" +
+        "Mas com palavras não sei dizer\n" +
+        "Como é grande o meu amor por você\n" +
+        "\n" +
+        "E não há nada pra comparar\n" +
+        "Para poder lhe explicar\n" +
+        "Como é grande o meu amor por você\n" +
+        "\n" +
+        "Nem mesmo o céu, nem as estrelas\n" +
+        "Nem mesmo o mar e o infinito\n" +
+        "Não é maior que o meu amor\n" +
+        "Nem mais bonito\n" +
+        "\n" +
+        "Me desespero a procurar\n" +
+        "Alguma forma de lhe falar\n" +
+        "Como é grande o meu amor por você\n" +
+        "\n" +
+        "Nunca se esqueça, nem um segundo\n" +
+        "Que eu tenho o amor maior do mundo\n" +
+        "Como é grande o meu amor por você\n" +
+        "\n" +
+        "Eu tenho tanto pra lhe falar\n" +
+        "Mas com palavras não sei dizer\n" +
+        "Como é grande o meu amor por você\""
 const val CHAVE_MUSICA = "CHAVE_MUSICA"

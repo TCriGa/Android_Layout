@@ -45,6 +45,11 @@ class ListaMusicaFragment : androidx.fragment.app.Fragment() {
         listaMusica.add(Musica(MUSICAS_01, LETRA_MUSICA_01, R.drawable.bita_sentimentos))
         listaMusica.add(Musica(MUSICA_02, LETRA_MUSICA_02, R.drawable.fazendinha))
         listaMusica.add(Musica(MUSICA_03, LETRA_MUSICA_03, R.drawable.bita_animais))
+        listaMusica.add(Musica(MUSICA_04, LETRA_MUSICA_04, R.drawable.bita_sentimentos))
+        listaMusica.add(Musica(MUSICA_05, LETRA_MUSICA_05, R.drawable.bita_nosso_mundo2))
+        listaMusica.add(Musica(MUSICA_06, LETRA_MUSICA_06, R.drawable.bita_e_a_natureza))
+        listaMusica.add(Musica(MUSICA_07, LETRA_MUSICA_07, R.drawable.radio_bita))
+
 
         listaMusicaAdapter.atualizarListaMusica(listaMusica)
         exibirRecycleView()
