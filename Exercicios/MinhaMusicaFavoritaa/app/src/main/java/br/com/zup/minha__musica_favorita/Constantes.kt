@@ -27,3 +27,67 @@ const val BITA_E_NOSSO_MUNDO2 = " Bita e o nosso Mundo 2"
 const val ANO_BITA_MUNDO2 = "Ano 2021\n Produção : Sony Music"
 const val DESCRICAO_MUNDO2 = "A temporada Bita e o Nosso Mundo 2 foi pensada e planejada para apresentar temas abrangentes que fazem parte da rotina infantil, dando continuidade a Bita e o Nosso Mundo, lançada em 2018.  Ao todo são dez músicas, que estimulam as crianças a lidarem com suas próprias emoções, a entenderem melhor o ambiente, as pessoas e os conceitos que permeiam os primeiros anos de vida "
 const val CHAVE_ALBUM = "CHAVE_BITA"
+const val MUSICAS_01 = "01 - A Tristeza Vai Passar --> Single : Sentimento"
+const val LETRA_MUSICA_01 = "\"LETRA \n" +
+        "\n" +
+        "Meu amor, me diga, o que há?\n" +
+        "Por que tão cinza seu dia está?\n" +
+        "\n" +
+        "Me explica, o que é que aconteceu?\n" +
+        "Qual foi o bicho que te mordeu?\n" +
+        "\n" +
+        "Acho que eu sei que é que você tem\n" +
+        "Pois já passei por isso também \n" +
+        "E um bom conselho posso te dar\n" +
+        "Me dá um abraço pra melhorar\n" +
+        "\n" +
+        "O nome disso é tristeza (vai passar)\n" +
+        "Eu tenho plena certeza (vai passar)\n" +
+        "Como faz a correnteza (vai passar)\n" +
+        "Teu coração, fortaleza, vai se curar\n" +
+        "\n" +
+        "Meu amor, pode falar pra mim\n" +
+        "Por que se sente pra baixo assim\n" +
+        "\n" +
+        "Vi que o teu brilho diminuiu\n" +
+        "Notei que o teu sorriso sumiu\n" +
+        "\n" +
+        "Acho que eu sei que é que você tem\n" +
+        "Pois eu já fiquei assim também\n" +
+        "Um bom conselho posso te dar\n" +
+        "Dá cá um abraço pra melhorar\n" +
+        "\n" +
+        "O nome disso é tristeza (vai passar)\n" +
+        "Eu tenho plena certeza (vai passar)\n" +
+        "Como faz a correnteza (vai passar)\n" +
+        "Teu coração, fortaleza, vai se curar\n" +
+        "\n" +
+        "Colo de mãe tem magia (vai passar)\n" +
+        "Beijo de pai, calmaria (vai passar)\n" +
+        "Essa tristeza tão fria (vai passar)\n" +
+        "E toda sua alegria vai regressar\n\""
+const val MUSICA_02 = " 02 - Fazendinha --> Album: Bita e os animais"
+const val LETRA_MUSICA_02 = "\"Bom dia\n O Sol já nasceu lá na fazendinha\n Acorda o bezerro e a vaquinha\n Que já cocoricou dona galinha\n Levanta\n Que o cavalinho já pulou da cama\n Que o pintinho tirou seu pijama\n E o porquinho já caiu na lama\n Lá na fazendinha é manhã\n Deixa de manha e vem pra cá\n Que o Sol raiou e agora é hora de brincar\""
+const val MUSICA_03 = "Viajar pelo Safari --> Album: Bita e os animais"
+const val LETRA_MUSICA_03 = "\"LETRA DA MÚSICA:\n" +
+        "Vamos viajar até onde o Sol possa nos guiar, vamos para a África\n" +
+        "Juntos a sorrir dar as nossas mãos e nos divertir, o safari descobrir\n" +
+        "\n" +
+        "Qual a cor da zebra? Não se sabe ao certo\n" +
+        "Será que ela é branca e preta ou será que é o inverso?!\n" +
+        "\n" +
+        "Olha o elefante, quantos quilos têm?\n" +
+        "Eu duvido muito mesmo que não passe de cem\n" +
+        "\n" +
+        "Vamos viajar até onde o Sol possa nos guiar, vamos para a África\n" +
+        "Juntos a sorrir dar as nossas mãos e nos divertir, o safari descobrir\n" +
+        "\n" +
+        "Dona hiena vive dando gargalhadas\n" +
+        "Acho que um palhaço lhe contou alguma piada\n" +
+        "\n" +
+        "Senhora girafa que pescoço grande\n" +
+        "Pegue uma estrela para mim, essa mais brilhante\n" +
+        "\n" +
+        "Vamos viajar até onde o Sol possa nos guiar, vamos para a África\n" +
+        "Juntos a sorrir dar as nossas mãos e nos divertir no safari\""
+const val CHAVE_MUSICA = "CHAVE_MUSICA"

@@ -11,7 +11,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 class InformacaoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityInformacaoBinding
-    private val listaMusica = listOf("Informações","Fotos" )
+    private val listaMusica = listOf("Informações","Fotos", "Lista Musica" )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

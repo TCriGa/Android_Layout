@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import br.com.zup.minha__musica_favorita.detalhe.album.FotosFragment
+import br.com.zup.minha__musica_favorita.detalhe.album.listaMusica.ListaMusicaFragment
 import br.com.zup.minha__musica_favorita.detalhe.informacoes.InformacoesFragment
 
 class InformacoesPagerAdapter(
@@ -19,6 +20,7 @@ class InformacoesPagerAdapter(
         when(position){
             0 -> return InformacoesFragment()
             1 -> return FotosFragment()
+            2 ->return ListaMusicaFragment()
         }
 
         return InformacoesFragment()

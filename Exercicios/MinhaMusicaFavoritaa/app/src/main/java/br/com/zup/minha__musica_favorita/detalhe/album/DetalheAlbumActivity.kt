@@ -1,7 +1,5 @@
 package br.com.zup.minha__musica_favorita.detalhe.album
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -9,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.minha__musica_favorita.CHAVE_ALBUM
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityAlbumBinding
-import br.com.zup.minha__musica_favorita.model.Musica
+import br.com.zup.minha__musica_favorita.model.Album
 
 class DetalheAlbumActivity : AppCompatActivity() {
 
@@ -36,14 +34,14 @@ class DetalheAlbumActivity : AppCompatActivity() {
 
 
     fun recuperarInformacoesAlbum() {
-        val albumReceber = intent.getParcelableExtra<Musica>(CHAVE_ALBUM)
+        val albumReceber = intent.getParcelableExtra<Album>(CHAVE_ALBUM)
 
         if (albumReceber != null) {
             receberInformacoes(albumReceber)
         }
     }
 
-    fun receberInformacoes(album: Musica) {
+    fun receberInformacoes(album: Album) {
         binding.imageDetalhe.setImageResource(album.getImagem())
         binding.textAno.text = album.getAnoProducao()
         binding.textDescricao.text = album.getDescricao()

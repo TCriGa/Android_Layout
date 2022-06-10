@@ -18,4 +18,6 @@
     <string name="descricao_do_album">Descrição do album</string>
     <string name="detalhe_do_album">Detalhe do album</string>
     <string name="album_favorito">Album favoritado com sucesso!</string>
+    <string name="musicas_do_album">Lista de Musicas</string>
+    <string name="musicas">Musicas - Mundo Bita</string>
 </resources>

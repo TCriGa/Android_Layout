@@ -5,14 +5,11 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 class Musica(
-    private var imagem: Int,
-    private var nomeAlbum : String,
-    private var descricao : String,
-    private var anoProducao : String,
-
+    private var listaMusica : String,
+    private var letraMusica: String,
+    private var imagem : Int
 ) : Parcelable {
     fun getImagem() = this.imagem
-    fun getNomeAlbum() = this.nomeAlbum
-    fun getDescricao() = this.descricao
-    fun getAnoProducao() = this.anoProducao
+    fun getListaMusica() = this.listaMusica
+    fun getLetraMusica() = this.letraMusica
 }

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import br.com.zup.minha__musica_favorita.*
 import br.com.zup.minha__musica_favorita.databinding.FragmentFotosBinding
 import br.com.zup.minha__musica_favorita.detalhe.album.adapter.AlbumMusicaAdapter
-import br.com.zup.minha__musica_favorita.model.Musica
+import br.com.zup.minha__musica_favorita.model.Album
 
 class FotosFragment : Fragment() {
 
@@ -38,27 +38,27 @@ class FotosFragment : Fragment() {
 
     private fun exibirRecyclerView() {
         adicionarItemListaAlbum()
-        binding.rvListaMusica.adapter = albumAdapter
-        binding.rvListaMusica.layoutManager = GridLayoutManager(context, 2)
+        binding.rvListaAlbum .adapter = albumAdapter
+        binding.rvListaAlbum .layoutManager = GridLayoutManager(context, 2)
 
 
     }
 
 
     private fun adicionarItemListaAlbum() {
-        val listaAlbum = mutableListOf<Musica>()
+        val listaAlbum = mutableListOf<Album>()
 
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_sentimentos,
                 BITA_E_OS_SENTIMETOS,
                 DESCRICAO_SENTIMENTO,
-                ANO_SENTIMENTOS
+                ANO_SENTIMENTOS,
             )
         )
 
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_nosso_mundo2,
                 BITA_E_NOSSO_MUNDO2,
                 DESCRICAO_MUNDO2,
@@ -66,13 +66,13 @@ class FotosFragment : Fragment() {
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_e_o_circo,
                 BITA_E_O_CIRCO, DESCRICAO_CIRCO, ANO_BITA_E_O_CIRCO
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_e_o_nosso_mundo,
                 BITA_E_O_NOSSO_MUNDO,
                 DESCRICAO_NOSSO_MUNDO,
@@ -80,7 +80,7 @@ class FotosFragment : Fragment() {
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_animais,
                 BITA_E_OS_ANIMAIS,
                 DESCRICAO_ANIMAIS,
@@ -88,7 +88,7 @@ class FotosFragment : Fragment() {
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_e_a_natureza,
                 BITA_E_A_NATUREZA,
                 DESCRICAO_NATUREZA,
@@ -96,7 +96,7 @@ class FotosFragment : Fragment() {
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_e_o_corpo_humano,
                 BITA_E_O_CORPO_HUMANO,
                 DESCRICAO_HUMANO,
@@ -104,7 +104,7 @@ class FotosFragment : Fragment() {
             )
         )
         listaAlbum.add(
-            Musica(
+            Album(
                 R.drawable.bita_nosso_dia,
                 BITA_E_O_NOSSO_DIA,
                 DESCRICAO_NOSSO_DIA,
@@ -115,7 +115,7 @@ class FotosFragment : Fragment() {
 
     }
 
-    private fun irParaDetalheClickFragment(album: Musica) {
+    private fun irParaDetalheClickFragment(album: Album) {
 
         val intent = Intent(this.context, DetalheAlbumActivity::class.java).apply {
             putExtra(CHAVE_ALBUM, album)
