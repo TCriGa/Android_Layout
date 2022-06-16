@@ -3,8 +3,8 @@ package br.com.zup.zoologico.zoo.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.zoologico.zoo.model.Animal
 import br.com.zup.zoologico.databinding.ZooItemBinding
+import br.com.zup.zoologico.zoo.model.Animal
 
 class ZooAdapter(
     private var listaAnimal: MutableList<Animal>,
@@ -28,9 +28,10 @@ class ZooAdapter(
 
     fun atualizarListaProdutos(novaListaProduto: MutableList<Animal>) {
         if (listaAnimal.size == 0) {
+            listaAnimal = novaListaProduto
+        } else {
             listaAnimal.addAll(novaListaProduto)
         }
-
         notifyDataSetChanged()
     }
 

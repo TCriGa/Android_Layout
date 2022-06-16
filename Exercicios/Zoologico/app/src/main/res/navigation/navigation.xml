@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_zooHomeFragment_to_detalheZooFragment"
             app:destination="@id/detalheZooFragment" />
+        <argument
+            android:name="Produto"
+            app:argType="br.com.zup.zoologico.zoo.model.Animal" />
     </fragment>
     <fragment
         android:id="@+id/detalheZooFragment"
@@ -20,7 +23,10 @@
         android:label="fragment_detalhe_zoo"
         tools:layout="@layout/fragment_detalhe_zoo" >
         <argument
-            android:name="nomeArgs"
+            android:name="produto"
             app:argType="br.com.zup.zoologico.zoo.model.Animal" />
+        <action
+            android:id="@+id/action_detalheZooFragment_to_zooHomeFragment"
+            app:destination="@id/zooHomeFragment" />
     </fragment>
 </navigation>

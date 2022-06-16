@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
+import br.com.zup.zoologico.CHAVE_ZOO
 import br.com.zup.zoologico.MENSAGEM_ERRO_DESCRICAO
 import br.com.zup.zoologico.MENSAGEM_ERRO_NOME
 import br.com.zup.zoologico.databinding.FragmentZooHomeBinding
@@ -14,7 +15,6 @@ import br.com.zup.zoologico.zoo.model.Animal
 
 class ZooHomeFragment : Fragment() {
     private lateinit var binding: FragmentZooHomeBinding
-
     private val zooAdapter: ZooAdapter by lazy {
         ZooAdapter(arrayListOf(), ::irParaDetalheZoo)
     }
@@ -29,9 +29,12 @@ class ZooHomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        exibirRecycleView()
         binding.buttonAdicionar.setOnClickListener {
             adicionarDados()
         }
+
+
     }
 
     private fun exibirRecycleView() {
@@ -40,6 +43,7 @@ class ZooHomeFragment : Fragment() {
 
     private fun adicionarDados() {
         val listaAnimais = mutableListOf<Animal>()
+
         val animal = recuperarDados()
         if (animal != null) {
             listaAnimais.add(animal)
@@ -51,8 +55,9 @@ class ZooHomeFragment : Fragment() {
     }
 
     private fun recuperarDados(): Animal? {
-        val nomeAnimal = binding.editName.text.toString()
-        val descricao = binding.editDescricao.text.toString()
+
+        var nomeAnimal = binding.editName.text.toString()
+        var descricao = binding.editDescricao.text.toString()
         if (nomeAnimal.isNotEmpty() && descricao.isNotEmpty()) {
             limparCampoEdicao()
             return Animal(nomeAnimal, descricao)
@@ -77,4 +82,5 @@ class ZooHomeFragment : Fragment() {
         binding.editName.text.clear()
         binding.editDescricao.text.clear()
     }
+
 }
