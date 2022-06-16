@@ -10,11 +10,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.caixadesupermercado.Informacao.InformacaoActivity
 import br.com.zup.caixadesupermercado.R
-import br.com.zup.caixadesupermercado.databinding.ActivityMainBinding
+import br.com.zup.caixadesupermercado.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityHomeBinding
     private lateinit var nomeProduto: String
     private lateinit var quantidade: String
     private lateinit var valorDoProduto: String
@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ClickButton()
 

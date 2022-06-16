@@ -20,10 +20,10 @@ class InformacaoActivity : AppCompatActivity() {
         setContentView(binding.root)
         alterarActionBar()
         recuperarExibirDados()
-        clicRefazerComprask()
+        clicRefazerCompras()
     }
 
-    private fun clicRefazerComprask() {
+    private fun clicRefazerCompras() {
         binding.buttonRefazerCompras.setOnClickListener {
             val intent2 = Intent(this, HomeActivity::class.java)
             startActivity(intent2)
