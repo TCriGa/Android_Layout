@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.v("App Filme", "Passou pelo onCreate() da main")
         setContentView(R.layout.activity_main)
 
         val botaoMensagem = findViewById<Button>(R.id.bottom_mensagem)
@@ -41,34 +40,4 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-    override fun onStart() {
-        super.onStart()
-        Log.d(TAG, " Passou pelo onStart() da main")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d(TAG, "Passou pelo onResume() da main")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d(TAG, "Passou pelo onPause() da main")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d(TAG, "Passou pelo onStop() da main")
-    }
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d(TAG, "Passou pelo onDestroy() da main")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.d(TAG, "Passou pelo onRestart() da main")
-    }
-
 }

@@ -1,11 +1,12 @@
 package br.com.zup.caixadesupermercado.Informacao
+
 import CARRINHO
 import Class.Carrinho
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.caixadesupermercado.Home.HomeActivity
 import br.com.zup.caixadesupermercado.R
 import br.com.zup.caixadesupermercado.databinding.ActivityInformacaoBinding
@@ -17,24 +18,27 @@ class InformacaoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityInformacaoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        supportActionBar?.setTitle(getString(R.string.detalhe_compra))
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+        alterarActionBar()
         recuperarExibirDados()
+        clicRefazerComprask()
+    }
 
-
-        binding.buttonRefazerCompras.setOnClickListener{
-            val intent2 = Intent(this, HomeActivity ::class.java)
+    private fun clicRefazerComprask() {
+        binding.buttonRefazerCompras.setOnClickListener {
+            val intent2 = Intent(this, HomeActivity::class.java)
             startActivity(intent2)
         }
+    }
 
+    private fun alterarActionBar() {
+        supportActionBar?.setTitle(getString(R.string.detalhe_compra))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun recuperarExibirDados() {
         val carrinho = intent.getParcelableExtra<Carrinho>(CARRINHO)
 
-        if (carrinho != null){
+        if (carrinho != null) {
             val valorTotal = calcularValorTotal(
                 carrinho.getQuantidade(),
                 carrinho.valorDoProduto()
@@ -44,20 +48,20 @@ class InformacaoActivity : AppCompatActivity() {
     }
 
     private fun calcularValorTotal(
-        quantidade :Int,
-        valorUnitario : Double
-    ): Double{
+        quantidade: Int,
+        valorUnitario: Double
+    ): Double {
         return quantidade * valorUnitario
     }
 
     @SuppressLint("SetTextI18n")
-    private fun exibirValorTotal(valorTotal: Double){
+    private fun exibirValorTotal(valorTotal: Double) {
         binding.textTotalValue.text = "R$ ${"%.2f".format(valorTotal)}"
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == android.R.id.home){
-            this.finish()
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
             return true
         }
         return super.onOptionsItemSelected(item)
