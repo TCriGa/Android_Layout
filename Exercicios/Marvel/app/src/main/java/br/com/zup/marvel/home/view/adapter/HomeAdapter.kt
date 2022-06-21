@@ -28,9 +28,9 @@ class HomeAdapter(private var listaPersonagens: MutableList<Personagens>,
 
     override fun getItemCount() = listaPersonagens.size
 
-        fun atualizarListaFilme(novaLista:MutableList<Personagens>){
+        fun atualizarListaFilme(novaLista:List<Personagens>){
             if (listaPersonagens.size == 0){
-                listaPersonagens = novaLista
+                listaPersonagens = novaLista as MutableList<Personagens>
             }else{
                 listaPersonagens.addAll(novaLista)
             }
