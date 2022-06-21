@@ -66,6 +66,8 @@ class FotosFragment : Fragment() {
     }
 
     private fun irParaDetalheClickFragment(album : Musica){
+        val navHostFragment = SupportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
 val navControler = findNavController()
       navControler.navigate(R.id.action_fotosFragment_to_detalheClickFragment)
     }

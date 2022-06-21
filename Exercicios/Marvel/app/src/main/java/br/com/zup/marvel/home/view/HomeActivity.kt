@@ -1,20 +1,20 @@
-package br.com.zup.marvel.home
+package br.com.zup.marvel.home.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.zup.marvel.*
-import br.com.zup.marvel.Class.Personagens
-import br.com.zup.marvel.adapter.FilmeAdapter
+import br.com.zup.marvel.home.model.Personagens
+import br.com.zup.marvel.home.view.adapter.HomeAdapter
 import br.com.zup.marvel.databinding.ActivityHomeBinding
 import br.com.zup.marvel.detalhe.DetalheActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
 
-    private val adapter: FilmeAdapter by lazy {
-        FilmeAdapter(arrayListOf(), this::irParaDetalheFilme)
+    private val adapter: HomeAdapter by lazy {
+        HomeAdapter(arrayListOf(), this::irParaDetalheFilme)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

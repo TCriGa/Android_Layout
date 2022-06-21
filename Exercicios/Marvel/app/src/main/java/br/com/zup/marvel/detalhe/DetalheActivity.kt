@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import br.com.zup.marvel.CHAVE_MARVEL
-import br.com.zup.marvel.Class.Personagens
+import br.com.zup.marvel.home.model.Personagens
 import br.com.zup.marvel.R
 import br.com.zup.marvel.databinding.ActivityDetalheBinding
 

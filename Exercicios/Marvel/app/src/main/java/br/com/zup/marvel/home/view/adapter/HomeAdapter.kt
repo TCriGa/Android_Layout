@@ -1,14 +1,14 @@
-package br.com.zup.marvel.adapter
+package br.com.zup.marvel.home.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.marvel.Class.Personagens
+import br.com.zup.marvel.home.model.Personagens
 import br.com.zup.marvel.databinding.FilmeItemBinding
 
-class FilmeAdapter(private var listaPersonagens: MutableList<Personagens>,
-                   private  val clickPersonagens : (heroi : Personagens) -> Unit):
-    RecyclerView.Adapter<FilmeAdapter.ViewHolder>() {
+class HomeAdapter(private var listaPersonagens: MutableList<Personagens>,
+                  private  val clickPersonagens : (heroi : Personagens) -> Unit):
+    RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
